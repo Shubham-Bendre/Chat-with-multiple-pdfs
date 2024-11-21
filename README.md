@@ -1,5 +1,3 @@
-# Chat-with-multiple-pdfs
-
 # 📚 Chat with PDF using Gemini 💁
 
 Effortlessly interact with your PDF files using the power of **Google Generative AI**! This app enables users to upload PDF files, process them into a searchable format, and ask detailed questions based on the PDF content.
