@@ -45,7 +45,7 @@ The project uses the **movie reviews** dataset from the NLTK library, which cons
 
 ## 🚀 Usage
 
-To run the **Streamlit app**, save the script as `Sentiment.py` and execute the following command in your terminal:
+To run the **app.py**,  execute the following command in your terminal:
 
 ```bash
-streamlit run Sentiment.py
+streamlit run app.py
