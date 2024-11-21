@@ -1,40 +1,51 @@
 # Chat-with-multiple-pdfs
 
-This project implements a **sentiment analysis** system for movie reviews using machine learning techniques. It classifies the sentiment of text inputs as either **positive** 😊 or **negative** 😞, providing a simple interface for users to analyze movie reviews.
+# 📚 Chat with PDF using Gemini 💁
+
+Effortlessly interact with your PDF files using the power of **Google Generative AI**! This app enables users to upload PDF files, process them into a searchable format, and ask detailed questions based on the PDF content.
 
 ---
 
-## 🌟 Features
+## 🚀 Features
 
-- **Machine Learning Model** 🧠: Utilizes a Naive Bayes classifier trained on the NLTK movie reviews dataset.
-- **User Interface** 💻: Built using **Streamlit**, allowing users to input text and receive sentiment predictions.
-- **Visualization** 📊: Displays a classification report and sentiment distribution for example texts.
-
----
-
-## 🛠️ Technologies Used
-
-- **Python** 🐍: The programming language for implementing the sentiment analysis model.
-- **NLTK** 📚: Natural Language Toolkit for accessing the movie reviews dataset.
-- **Scikit-learn** 📈: Machine learning library for building and evaluating the classification model.
-- **Streamlit** 🌐: Framework for creating interactive web applications.
-- **Matplotlib and Seaborn** 🎨: Libraries for data visualization.
+- 📄 **Upload Multiple PDFs**: Seamlessly process one or more PDF files.
+- 🧠 **AI-Powered QA**: Get answers to your questions based on the PDF content using **Gemini Pro**.
+- 🗂️ **FAISS Indexing**: Efficient text chunking and embedding storage for rapid responses.
+- 🔐 **Secure Access**: Integrated with environment variables for secure API key handling.
 
 ---
 
-## 🎥 Dataset
+## 📂 File Structure
 
-The project uses the **movie reviews** dataset from the NLTK library, which consists of a collection of movie reviews categorized as positive or negative.
+- `main.py`: Core Streamlit app logic.
+- `requirements.txt`: All dependencies required for the project.
+- `.env`: Stores your `GOOGLE_API_KEY` for secure API access.
+- `faiss_index/`: Directory where FAISS indexing data is stored locally.
 
 ---
 
-## 🛠️ How It Works
+## 🤝 How It Works
 
-1. **Data Loading** 📦: The application loads the movie reviews dataset and prepares it for analysis.
-2. **Data Preparation** ✂️: Reviews are split into training and testing sets for model evaluation.
-3. **Model Training** 🎓: A pipeline is created combining TF-IDF for feature extraction and a Naive Bayes classifier for sentiment classification.
-4. **Predictions** 🔮: The model predicts sentiment for user-provided text and displays results.
-5. **Visualization** 📊: A classification report is generated, showing accuracy and precision metrics, with visual representations of the results.
+1. **Upload PDFs**: Drag and drop your PDF files in the sidebar.
+2. **Process PDFs**: Click on **Submit & Process** to extract text and create searchable embeddings.
+3. **Ask Questions**: Enter your query in the input box and get detailed responses powered by Gemini AI.
+
+---
+
+## 🧩 Key Technologies
+
+- **Streamlit**: Interactive and user-friendly web interface.
+- **PyPDF2**: Extracts text from PDF documents.
+- **LangChain**: Manages conversational chains and embeddings.
+- **Google Generative AI**: Provides embeddings and conversational capabilities.
+- **FAISS**: Fast and efficient similarity search.
+
+---
+
+## 💡 Usage Tips
+
+- For best results, ensure your PDF documents contain searchable text (scanned images may not work well).
+- Questions unrelated to the PDF context will result in: _"Answer is not available in the context."_.
 
 ---
 
@@ -49,3 +60,7 @@ To run the **app.py**,  execute the following command in your terminal:
 
 ```bash
 streamlit run app.py
+```
+
+---
+Feel free to 🌟 star this repo if you find it helpful! 🚀
